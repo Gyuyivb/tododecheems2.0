@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tododecheems2.0/static/css/main.c6a1d6e8.css",
+    "main.js": "/tododecheems2.0/static/js/main.0f23d0ab.js",
+    "index.html": "/tododecheems2.0/index.html",
+    "static/media/delete.svg": "/tododecheems2.0/static/media/delete.331149da222541bc87c25bf8d775a070.svg",
+    "static/media/edit.svg": "/tododecheems2.0/static/media/edit.900a8fd203adc364a82d0ebc6ad8dc94.svg",
+    "static/media/check.svg": "/tododecheems2.0/static/media/check.fa4fb594b16385306a04b9c87c0feb55.svg",
+    "main.c6a1d6e8.css.map": "/tododecheems2.0/static/css/main.c6a1d6e8.css.map",
+    "main.0f23d0ab.js.map": "/tododecheems2.0/static/js/main.0f23d0ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6a1d6e8.css",
+    "static/js/main.0f23d0ab.js"
+  ]
+}

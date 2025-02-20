@@ -17,7 +17,7 @@ function TodoItem(props) {
         {props.text}
       </p>
       <EditIcon
-        onDelete={props.onDelete}
+        onEdit={props.onEdit}
       />
       <DeleteIcon
         onDelete={props.onDelete}

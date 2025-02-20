@@ -28,23 +28,39 @@ function useTodos() {
   }
 
   const addTodo = (text) => {
+    const id = newTodoId(todos);
     const newTodos = [...todos];
     newTodos.push({
       completed: false,
+      id,
       text,
     });
     saveTodos(newTodos);
   };
+  const getTodo = (id) => {
+    const todoIndex = todos.findIndex(
+      (todo) => todo.id === id);
+      return todos[todoIndex];
+  };
+  
+  const editTodo = (id, newText) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.id === id
+    )
+    newTodos[todoIndex].text = newText;
+    saveTodos(newTodos);
+  };
 
-  const completeTodo = (text) => {
-    const todoIndex = todos.findIndex(todo => todo.text === text);
+  const completeTodo = (id) => {
+    const todoIndex = todos.findIndex(todo => todo.id === id);
     const newTodos = [...todos];
     newTodos[todoIndex].completed = true;
     saveTodos(newTodos);
   };
 
-  const deleteTodo = (text) => {
-    const todoIndex = todos.findIndex(todo => todo.text === text);
+  const deleteTodo = (id) => {
+    const todoIndex = todos.findIndex(todo => todo.id === id);
     const newTodos = [...todos];
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
@@ -58,6 +74,7 @@ function useTodos() {
     searchValue,
     searchedTodos,
     openModal,
+    getTodo,
   };
   
   const stateUpdaters = {
@@ -67,9 +84,19 @@ function useTodos() {
     deleteTodo,
     setOpenModal,
     sincronizeTodos,
+    editTodo,
   };
 
   return { state, stateUpdaters };
+}
+
+function newTodoId (todoList) {
+  if (!todoList.length) {
+    return 1
+  }
+  const idList = todoList.map(todo => todo.id);
+  const idMax = Math.max(...idList);
+  return idMax + 1;
 }
 
 export { useTodos };

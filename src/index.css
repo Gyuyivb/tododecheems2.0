@@ -1,9 +1,16 @@
+/* 
+#EEEBDD rgb(238, 235, 221) blanco
+#810000 rgb(129, 0, 0) rojo
+#630000 rgb(99, 0, 0) rojo oscuro
+#1B1717 rgb(27, 23, 23) negro?
+ */
+
 body {
   margin: 0;
   padding: 0;
-  background: #F2F4F5;
-  color: #1E1E1F;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background: #630000 ;
+  color: #EEEBDD;
+  font-family: 'Reenie Beanie', serif;
 }
 
 #root {

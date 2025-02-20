@@ -30,20 +30,25 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
- * Clone the repository:
+ 1. Clone the repository:
 
-`git clone [here](https://github.com/Gyuyivb/tododecheems2.0.git)
-Navigate to the project directory:
+    ```bash
+git clone [here](https://github.com/Gyuyivb/tododecheems2.0.git)
+ 
+ 2. Navigate to the project directory:
 
-`cd todotododecheems2.0
+    ```bash
+    cd todotododecheems2.0
 
- * Install the dependencies:
+3. Install the dependencies:
 
-`npm install
+    ```bash
+    npm install
 
- * Start the app:
+4. Start the app:
 
-`npm start
+    ```bash
+    npm start
 
 Your app should now be live at (http://localhost:3000)!
 

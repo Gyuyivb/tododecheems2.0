@@ -8,8 +8,6 @@ import { TodosError } from '../../ui/TodosError';
 import { TodosLoading } from '../../ui/TodosLoading';
 import { EmptyTodos } from '../../ui/EmptyTodos';
 import { TodoItem } from '../../ui/TodoItem';
-import { Modal } from '../../ui/Modal';
-import { TodoForm } from '../../ui/TodoForm';
 import { CreateTodoButton } from '../../ui/CreateTodoButton';
 import { ChangeAlert } from '../../ui/ChangeAlert';
 import { useNavigate } from 'react-router-dom';
@@ -24,12 +22,10 @@ function HomePage() {
     searchedTodos,
     totalTodos,
     completedTodos,
-    openModal,
     searchValue,
   } = state;
 
   const {
-    setOpenModal,
     addTodo,
     completeTodo,
     deleteTodo,
